@@ -1,0 +1,30 @@
+{
+  // ESLint
+  "eslint.validate": ["javascript"],
+  // stylelint
+  "stylelint.enable": true,
+  "stylelint.configBasedir": ".",
+  "stylelint.validate": ["css", "scss"],
+  "css.validate": false,
+  "scss.validate": false,
+  // Lint On Save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  // 言語毎の設定
+  "[json]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": false
+    }
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": false
+    }
+  }
+}
